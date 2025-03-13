@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Light Mode Enforcer",
+  "version": "1.0",
+  "description": "Forces GitHub into light mode, even when OS / Browser theme is dark.",
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["scripting"]
+}
